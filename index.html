@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>唯品会商城</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="./download/iconfont.css">
+    <script src="./js/jquery1.11.js"></script>
+    
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="top-nav">
+        <div class="top-nav-center">
+            <div id="city">
+                <p>北京市</p>
+                <div id="city-q"></div>
+            </div>
+            <ul id="top-list">
+                <li><a href="sign.html">请登录</a></li>
+                <li><a href="register.html">注册</a></li>
+                <li>
+                    <img src="./img/gifts.gif" alt="">
+                    <a href="details.html">签到有礼</a>
+                </li>
+                <li><a href="#">我的订单</a></li>
+                <li><a href="#">我的特卖</a></li>
+                <li><a href="#">会员俱乐部</a></li>
+                <li><a href="#">客户服务</a></li>
+                <li><a href="#">手机版</a></li>
+                <li><a href="#">更多</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="header">
+       <div class="header-center">
+           <img src="./img/temai.gif" alt="">
+           <img src="./img/1587017895494.png" alt="">
+           <div class="header-center-search">
+               <div class="search-input">
+                    <input type="text" placeholder="1折抢大牌好货">
+                    <p><i class="iconfont icon-gouwudai"></i></p>
+               </div>
+               <div class="search-list">
+                    <p><a href="">超级爆款 真便宜</a></p>
+                    <p><a href="">大牌特卖，1折抢</a></p>
+                    <p><a href="">大牌3折封顶</a></p>
+                    <p><a href="">冬日保暖馆</a></p>
+               </div>
+           </div>
+           <div class="search-bag" id="search-bag">
+            <i class="iconfont icon-gouwudai"></i>
+                <p>购物车</p>
+                <span>0</span>
+           </div>
+       </div>
+    </div>
+    <div class="main-nav">
+        <div class="main-nav-center">
+            <div class="main-nav-classify">
+                <p><a href="#">商品列表</a> </p>
+            </div>
+            <ul class="main-nav-ul">
+                <li><a href="">11.11特卖</a></li>
+                <li><a href="">最后疯抢</a></li>
+                <li><a href="">唯品快枪</a></li>
+                <li><a href="">唯品奥莱</a></li>
+                <li><a href="">品牌清仓</a></li>
+                <li><a href="">女装</a></li>
+                <li><a href="">母婴</a></li>
+                <li><a href="">家电</a></li>
+                <li><a href="">国际</a></li>
+                <li><a href="">美妆</a></li>
+                <li><a href="">更多v</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="banner">
+
+    </div>
+
+
+    <!-- 右侧边栏 -->
+    <div class="right-div">
+        <div class="right-div-center">
+            <a href="#">
+                <div class="right-div-user">
+                    <i class="iconfont icon-yonghu"></i>
+                    <p>账号</p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="right-div-shop">
+                    <i class="iconfont icon-gouwudai"></i>
+                    <p>购物袋</p>
+                    <span>0</span>
+                </div>
+            </a>
+            
+            <a href="#"><i class="iconfont icon-youhuiquan"></i></a>
+            <a href="#"><i class="iconfont icon-xin"></i></a>
+            <a href="#"><i class="iconfont icon-xingxing"></i></a>
+            <a href="#"><i class="iconfont icon-lishijilu"></i></a>
+
+            
+        </div>
+        <div class="right-div-rtop">
+            <a href="#">
+                <i class="iconfont icon-iconfonticonfonti2copy"></i>
+            </a>
+            <a href="#">
+                <i class="iconfont icon-iconfonticonfonti2copy"></i>
+            </a>
+        </div>
+    </div>
+
+
+    <!-- 左侧边栏 -->
+    <div class="left-div" id="lefts">
+        <img src="./img/11.11.png" alt="">
+        <ul id="left-div-ul">
+            <li><a href="">狂欢日历</a></li>
+            <li><a href="">大牌特卖</a></li>
+            <li><a href="">冬日保暖馆</a></li>
+            <li><a href="">3折疯抢</a></li>
+            <li><a href="">热销冠军榜</a></li>
+        </ul>
+        <div id="left-div-list">
+            <p><a href="#">时尚女装</a></p>
+            <p><a href="#">美妆个护</a></p>
+            <p><a href="#">亲子童装</a></p>
+            <p><a href="#">运动户外</a></p>
+            <p><a href="#">暖心内衣</a></p>
+            <p><a href="#">型格男装</a></p>
+            <p><a href="#">百搭鞋靴</a></p>
+            <p><a href="#">潮流箱包</a></p>
+            <p><a href="#">数码家电</a></p>
+            <p><a href="#">手表配饰</a></p>
+            <p><a href="#">家居家纺</a></p>
+            <p><a href="#">母婴用品</a></p>
+            <p><a href="#">食品营养</a></p>
+            <p><a href="#">日用百货</a></p>
+        </div>
+        <div id="left-div-top">
+            <p>TOP <i class="iconfont icon-iconfonticonfonti2copy"></i></p>
+        </div>
+    </div>
+    <!-- 图片区 -->
+    <div class="main">
+        <div class="main-top"></div>
+        <div class="main-top1"></div>
+        <div class="main-sale"></div>
+        <div class="main-Special">
+            <img src="./img/temai.png" alt="">
+            <div class="main-Special-center">
+                <p>
+                    <img src="./img/nvide.png" alt="">
+                    <span>女士西服</span>
+                </p>
+                <p>
+                    <img src="./img/woman.png" alt="">
+                    <span>女士西服</span>
+                </p>
+                <p>
+                    <img src="./img/man.png" alt="">
+                    <span>女士西服</span>
+                </p>
+                <p>
+                    <img src="./img/nvide.png" alt="">
+                    <span>女士西服</span>
+                </p>
+                <p>
+                    <img src="./img/woman.png" alt="">
+                    <span>女士西服</span>
+                </p>
+                <p>
+                    <img src="./img/man.png" alt="">
+                    <span>女士西服</span>
+                </p>
+                <p>
+                    <img src="./img/nvide.png" alt="">
+                    <span>女士西服</span>
+                </p>
+                <p>
+                    <img src="./img/woman.png" alt="">
+                    <span>女士西服</span>
+                </p>
+                <p>
+                    <img src="./img/man.png" alt="">
+                    <span>女士西服</span>
+                </p>
+                <p>
+                    <img src="./img/nvide.png" alt="">
+                    <span>女士西服</span>
+                </p>
+                <p>
+                    <img src="./img/woman.png" alt="">
+                    <span>女士西服</span>
+                </p>
+                <p>
+                    <img src="./img/man.png" alt="">
+                    <span>女士西服</span>
+                </p>
+            </div>
+        </div>
+    <!-- //商品界面 ---------------------------------------------------------------------------------->
+        <!-- 时尚女装 -->
+        <div id="women-wear" class="content">
+            <img src="./img/nvzhuang.png" alt="">
+            <div id="women-wear-list">
+                <p>精选品牌</p>
+                <p>专柜大牌</p>
+                <p>潮流时尚</p>
+                <p>国际大牌</p>
+            </div>
+            <ul id="women-wear-commodity" class="cartList">
+                <li></li>
+                <!-- <img src="./img/bosideng.png" alt="">
+                <p>波司登羽绒服</p>
+                <h1>1折起</h1>
+                <input type="button" id="" value="立即抢购"> -->
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <!-- 型格男装 -->
+        <div id="stylish-guy" class="content">
+            <img src="./img/xingnan.png" alt="">
+            <div id="stylish-guy-list">
+                <p>精选品牌</p>
+                <p>专柜大牌</p>
+                <p>潮流时尚</p>
+                <p>国际大牌</p>
+            </div>
+            <ul id="stylish-guy-commodity" class="cartList">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <!-- 童装 -->
+        <div id="children-wear" class="content">
+            <img src="./img/tongzhuang.png" alt="">
+            <div id="children-wear-list">
+                <p>精选品牌</p>
+                <p>专柜大牌</p>
+                <p>潮流时尚</p>
+                <p>国际大牌</p>
+            </div>
+            <ul id="children-wear-commodity" class="cartList">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <!-- 内衣 -->
+        <div id="underwear" class="content">
+            <img src="./img/neiyi.png" alt="">
+            <div id="underwear-list">
+                <p>精选品牌</p>
+                <p>专柜大牌</p>
+                <p>潮流时尚</p>
+                <p>国际大牌</p>
+            </div>
+            <ul id="underwear-commodity" class="cartList">
+                <li>
+                    
+                </li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <!-- 楼梯----------------------------------------- -->
+        <div id="floorNav">
+            <ul>
+                <li>时尚女装</li>
+                <li>型格男装</li>
+                <li>亲子童装</li>
+                <li>暖心内衣</li>
+                <li>活动规则</li>
+                <li>回顶部</li>
+            </ul>
+        </div>
+        <div id="rule" class="content">
+            <p>
+                【2020年11.11】促销活动规则<br><br>
+                活动主题：11.11特卖狂欢<br><br>
+                开售时间： 活动时间：2020年 10月31日20:00 - 2020 年11月14日10:00
+                <br>
+                一、 活动名：3折疯抢<br>
+                活动时间：2020年 10月31日20:00 - 2020 年11月14日10:00<br>
+                活动规则:<br>
+                1. 本次活动所有持有有效账户的注册用户均可参与；<br>
+                2. 支持本次活动的平台包括移动端APP、微信小程序端、PC端；<br>
+                3. 活动优惠：页面中提到3折封顶中的折扣比为特卖价与划线价的对比（特卖价/划线价=折扣比，如折扣比为0.3，则为3折）。特卖价指唯品会3折疯抢的活动期间特殊优惠的实际销售价，该价格是交易成交价，是您最终决定是否购买商品的依据。页面中除特殊专场外，大部分专场最高3折封顶；<br>
+                4. 部分商品的活动优惠仅限2020年 10月31日20:00至 2020 年11月14日10:00期间有效；<br>
+                5. 支持7天无理由退货的活动商品均可正常退货，参与活动的订单如产生退货，退款金额以商品的小计金额为准；将不退还分摊至每个商品的优惠金额，若退货后订单金额不符合免邮条件，须在退款中扣除5元发货运费；<br>
+                (注：自营/海淘商品：满88元免邮，退货不满足包邮条件需扣除5元发货运费，商家直营商品订单：运费规则以商品页面显示为准）<br>
+                6. 如发现恶意刷取等以不正当手段规避唯品会管理规则、或存在涉嫌欺诈、商业牟利、不恰当或不诚实地使用服务或者其他违反唯品会规则、本活动规则和/或其他公开规则的行为，唯品会有权终止其参与活动资格；<br>
+                7. 如出现不可抗力或情势变更情形（包括但不限于重大自然灾害、活动受政府机关指令影响需要停止举办或调整的、活动遭受严重网络攻击或因系统故障需要暂停举办的），则唯品会有权根据相关法律法规的规定主张免责；<br>
+                8. 如用户曾以不正常手段（包括但不限于作弊、虚假交易、刷单、搞乱系统、恶意套取、实施网络攻击等）购买过唯品会商品、领取过唯品会优惠券或参与过唯品会活动，唯品会有权终止其参与本活动的资格，并保留追究其法律责任的权利；<br>
+                9. 请您在认真阅读并清楚理解相关活动规则后自主决定是否参加，如您参加，则视为您已清楚了解活动规则并同意遵守。<br>
+                <br>
+                二、 活动名：唯品快抢<br>
+                活动时间：2020年 10月31日20:00 - 2020 年11月14日10:00<br>
+                活动规则:<br>
+                1. 本次活动所有持有有效账户的注册用户均可参与；<br>
+                2. 支持本次活动的平台包括移动端APP、微信小程序端、PC端、wap端、ipad端及快应用。<br>
+                3. “11.11特卖狂欢——唯品快抢” 为商品维度的活动，购买单个商品即可享受活动，无需凑单以及任何门槛；<br>
+                4. 参与活动的订单如产生退货，退款金额以商品的小计金额为准，将不退还分摊至每个商品的优惠金额，若退货后订单金额不符合免邮条件，须在退款中扣除5元运费；<br>
+                5. 如发现恶意刷取等以不正当手段规避唯品会管理规则、或存在涉嫌欺诈、商业牟利、不恰当或不诚实地使用服务或者其他违反唯品会规则、本活动规则和/或其他公开规则的行为，唯品会有权终止其参与活动资格；<br>
+                6. 如用户曾以不正常手段（包括但不限于作弊、虚假交易、刷单、搞乱系统、恶意套取、实施网络攻击等）购买过唯品会商品、领取过唯品会优惠券或参与过唯品会活动，唯品会有权终止其参与本活动的资格，若已获得活动奖品（如有），唯品会有权追回，并保留追究其法律责任的权利。<br>
+                7. 请您在认真阅读并清楚理解相关活动规则后自主决定是否参加，如您参加，则视为您已清楚了解活动规则并同意遵守。<br>
+                <br><br>
+
+
+                三、活动名：唯品快抢-限量活动<br>
+                活动时间：2020年 11月2日10:00 - 2020 年11月4日10:00<br>
+                活动规则:<br>
+                1、 本次活动所有持有有效账户的注册用户均可参与。<br>
+                2、 支持本次活动的平台包括移动端APP、微信小程序端、PC端、wap端、ipad端及快应用。<br>
+                3、 参加限量活动的商品，商品详情页展示对应的限量信息 “限量XX件，抢完即止”。仅以此信息为准，商品详情页没有出现该限量信息的则非“爆款限量抢”活动的商品。<br>
+                4、 限量玩法为商品维度活动，购买单个商品即可享受活动，无需凑单以及任何门槛；<br>
+                5、 本活动商品限量件数以spu维度设置，该单条码商品售完则该条码商品立即恢复为11.11特卖狂欢的活动价；具体商品降价力度及限量库存情况以页面显示为准。<br>
+                6、 支持7天无理由退货的活动商品均可正常退货，参与活动的订单如产生退货，退款金额以商品的小计金额为准，将不退还分摊至每个商品的优惠金额，若退货后订单金额不符合免邮条件，须在退款中扣除5元运费。<br>
+                7、 如发现恶意刷取等以不正当手段规避唯品会管理规则、或存在涉嫌欺诈、商业牟利、不恰当或不诚实地使用服务或者其他违反唯品会规则、本活动规则和/或其他公开规则的行为，唯品会有权终止其参与活动资格。<br>
+                8、 如用户曾以不正常手段（包括但不限于作弊、虚假交易、刷单、搞乱系统、恶意套取、实施网络攻击等）购买唯品会商品、领取过唯品会优惠券或参与过唯品会活动，唯品会有权终止其参与本活动的资格，并保留追究其法律责任的权限。<br>
+                9、 如出现不可抗力或情势变更情形（包括但不限于重大自然灾害、活动受政府机关指令影响需要停止举办或调整的、活动遭受严重网络攻击或因系统故障需要暂停举办的），则唯品会有权根据相关法律法规的规定主张免责。<br>
+                10、 请您在认真阅读并清楚理解相关活动规则后自主决定是否参加，如您参加，则视为您已清楚了解活动规则并同意遵守。<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;——唯品会在法律允许的范围内对本活动进行解释——
+            </p>
+        </div>
+    </div>
+
+    <script src="./js/index.js"></script>
+    <script src="./js/cartlist.js"></script>
+    <script>
+    
+    </script>
+</body>
+</html>

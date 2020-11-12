@@ -1,0 +1,725 @@
+body,ul,dl,dt,dd,p,ol,h1,h2,h3,h4,h5,h6,form,img,table,fieldset,legend{margin:0; padding:0;}
+ul,li,ol{list-style:none;}
+img,fieldset{border:0; }
+img{display:block;}
+a{text-decoration:none; color:#333;}
+h1,h2,h3,h4,h5,h6{font-weight:100;}
+body{ font-family:"微软雅黑";}
+input,a{outline:none;}
+
+// sass----------------------------------------
+.flexs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+// sass----------------------------------------
+/* header */
+//上列表
+.top-nav{
+    width: 100%;
+    height: 30px;
+    background: #f5f5f5;
+    // background: skyblue;
+}
+.top-nav-center{
+    width: 1170px;
+    height: 30px;
+    // background: oldlace;
+    margin: 0 auto;
+    @extend .flexs;
+}
+
+#city{
+    width: 86px;
+    height: 30px;
+    // background: paleturquoise;
+    @extend .flexs;
+    justify-content: space-around;
+    font-size: 12px;
+    cursor:pointer;
+}
+#city-q{
+    width: 0;
+    height: 0;
+    border-width: 6px;
+    border-style: solid;
+    border-color: transparent transparent #999;
+}
+#top-list li{
+    float: left;
+}
+#top-list li a{
+    padding: 0 20px 0 10px;
+    color: #666;
+    font-size: 12px;
+}
+#top-list li a:hover{
+    color: #f10180;
+}
+#top-list li img{
+    float: left;
+}
+//中间栏-------------------------------------
+.header{
+    height: 100px;
+    width: 100%;
+}
+.header-center{
+    width: 1210px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+.header-center img{
+    float: left;
+}
+.header-center img:nth-of-type(2){
+    width: 300px;
+    height: 100px;
+}
+.header-center-search{
+    width: 453px;
+    height: 56px;
+    float: left;
+    margin-top: 22px;
+    margin-left: 140px;
+}
+.search-input{
+    width: 453px;
+    height: 36px;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid #f10180;
+    box-sizing: border-box;
+}
+.search-input input{
+    width: 397px;
+    border: 0;
+    padding: 2px 12px;
+
+}
+.search-input p{
+    width: 53px;
+    height: 32px;
+    background:#f10180;
+    color: #fff;
+    text-align: center;
+    line-height: 32px;
+    cursor: pointer;
+}
+.search-list{
+    width: 453px;
+    height: 20px;
+}
+.search-list p{
+    float: left;
+    font-size: 12px;
+    line-height: 20px;
+    margin:0 6px 0 6px ;
+}
+.search-list p a{
+    color: #f10180;
+}
+// .search-list p:after{
+//     content: "";
+//     width: 2px;
+//     height: 12px;
+//     background: #666;
+// }
+.search-bag{
+    position: absolute;
+    right:150px;
+    top: 40px;
+    width: 96px;
+    height: 36px;
+    background: #f6f7f9;
+    box-sizing: border-box;
+    border: 1px solid #333;
+    margin-top: 22px;
+    margin-left: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}
+.search-bag p{
+    font-size: 12px;
+}
+.search-bag span{
+    display: block;
+    width: 24px;
+    height: 16px;
+    color: #fff;
+    background: #f10180;
+    border-radius: 8px;
+    text-align:center ;
+    line-height: 16px;
+    font-size: 12px;
+}
+
+//下列表---------------------------------
+.main-nav{
+    height:43px;
+    width:100%;
+}
+.main-nav-center{
+    width: 1170px;
+    height: 43px;
+    margin: 0 auto;
+    @extend .flexs;
+}
+.main-nav-classify{
+    width: 156px;
+    height: 43px;
+    background: #f10180;
+    text-align: center;
+    line-height: 43px;
+    
+}
+.main-nav-classify a{
+    font-size: 16px;
+    color: #fff;
+}
+
+.main-nav-ul{
+    margin-right: 110px;
+}
+.main-nav-ul li{
+    float: left;
+}
+.main-nav-ul li:nth-of-type(1) a{
+    font-weight: 900;
+}
+.main-nav-ul li a{
+    font-size: 16px;
+    padding: 0 16px;
+    color: #333333;
+}
+.main-nav-ul li a:hover{
+    color:#f10180;
+}
+.banner{
+    background: url(../img/bander.png) center;
+    width: 100%;
+    height: 681px;
+}
+
+/* 左侧边栏------------------------------- */
+.left-div{
+    width: 124px;
+    height: 100%;
+    position: absolute;
+    background: rgb(48, 48, 48);
+    top: 173px;
+    z-index: 99;
+    color: #fff;
+}
+#left-div-ul li{
+    border-bottom: 1px solid #000;
+}
+#left-div-ul a{
+    padding: 0 10px 5px 15px;
+    color: #fff;
+    line-height: 30px;
+    font-size: 14px;
+}
+#left-div-ul a:hover{
+    color:yellow;
+}
+#left-div-ul a:after{
+    position: absolute;
+    right: 10px;
+    content: ">";
+    color: #fff; 
+}
+#left-div-list{
+    width: 124px;
+    height: 217px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 8px;
+}
+#left-div-list p{
+    width: 60px;
+    height: 28px;
+    background: #3f3f3f;
+    font-size: 12px;
+    text-align: center;
+    line-height: 28px;
+    border-radius: 2px;
+    color: #fff;
+}
+#left-div-list p a{
+    color: #fff;
+}
+#left-div-list p a:hover{
+    color: yellow;
+}
+#left-div-top{
+    margin-top: 8px;
+    width: 124px;
+    height: 36px;
+    font-size: 16px;
+    line-height: 36px;
+    text-align: center;
+}
+#left-div-top p:hover{
+    color: yellow;
+}
+
+/* 右侧边栏 ---------------------------------------*/
+.right-div{
+    width: 36px;
+    height: 100%;
+    background: dimgrey;
+    right: 0;
+    top: 0;
+    position: absolute;
+    position: fixed;
+}
+.right-div i{
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    display: block;
+    font-size: 24px;
+    margin-top: 4px;
+    color: #fff;
+}
+.right-div i:hover{
+    background: #df147f;
+}
+// 要修改--------------------------------------------
+.right-div-center{
+    width: 36px;
+    height: 400px;
+    margin-top: 3px;
+    position: absolute;
+    top: 18%;
+}
+.right-div-user{
+    width: 36px;
+    height: 56px;
+}
+.right-div-user:hover{
+    background: #df147f;
+}
+.right-div-user p{
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+}
+.right-div-shop{
+    width: 36px;
+    height: 150px;
+    padding-top: 10px;
+    background: #df147f;
+    margin-top: 1px;
+}
+
+.right-div-shop p{
+    width: 14px;
+    font-size: 14px;
+    color: #fff;
+    margin: 5px auto;
+}
+.right-div-shop span{
+    display:block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #fff;
+    color: #df147f;
+    margin: 5px auto;
+    text-align: center;
+    line-height: 20px;
+    font-size: 14px;
+}
+.right-div-rtop{
+    width: 36px;
+    height: 84px;
+    position: absolute;
+    top: 665px;
+}
+.right-div-rtop i{
+    font-size: 22px;
+    font-weight: 100;
+}
+
+
+
+
+//主体---------------------------------------
+.main{
+    width: 100%;
+    height: 100%;
+    background: #ffe3e2;
+}
+.main-top{
+    margin: 0 auto;
+    width: 1000px;
+    height: 200px;
+    background: url(../img/hot.png);
+    cursor: pointer;
+}
+.main-top1{
+    margin: 0 auto;
+    width: 1000px;
+    height: 404px;
+    margin-top: 4px;
+    background: url(../img/1.png);
+    cursor: pointer;
+}
+.main-sale{
+    margin: 0 auto;
+    width: 1000px;
+    height: 1141px;
+    background: url(../img/2.png);
+    cursor: pointer;
+}
+.main-Special{
+    width: 1000px;
+    height: 524px;
+    margin: 0 auto;
+}
+.main-Special-center{
+    width: 1000px;
+    height: 424px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 5px;
+}
+.main-Special-center p{
+    width: 158px;
+    height: 198px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 6px;
+}
+.main-Special-center p img{
+    width: 125px;
+    height: 158px;
+}
+.main-Special-center p span{
+    font-size: 22px;
+}
+
+//商品界面-------------------------------------
+//女装
+#women-wear,#stylish-guy,#children-wear,#underwear{
+    width: 1032px;
+    height: 100%;
+    margin: 0 auto;
+}
+#women-wear,#stylish-guy,#children-wear,#underwear img{
+    margin: 0 auto;
+}
+#women-wear-list,#stylish-guy-list,#children-wear-list,#underwear-list{
+    width: 960px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+#women-wear-list p{
+    margin-top: 18px;
+    width: 236px;
+    background: #fff;
+    text-align: center;
+    font-size: 16px;
+    line-height: 40px;
+    border: 1px solid #000;
+}
+#women-wear-list p:hover{
+    background: #e1375b;
+    color: #fff;
+    border: 1px solid #e1375b;
+}
+#women-wear-commodity,#stylish-guy-commodity,#children-wear-commodity,#underwear-commodity{
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 1000px;
+    height: 820px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+#women-wear-commodity li{
+    width: 238px;
+    height: 397px;
+    background: #fff;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+#women-wear-commodity li:hover{
+    border:1px solid #f10180;
+}
+#women-wear-commodity li img{
+    width: 236px;
+    height: 219px;
+}
+//公共
+
+
+#women-wear-commodity li p{
+    font-size: 16px;
+    line-height: 26px;
+    height: 26px;
+    text-align: center;
+    margin-top: 20px;
+}
+#women-wear-commodity li h1{
+    text-align: center;
+    line-height: 33px;
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: 600;
+    color: #f10180;
+}
+#women-wear-commodity li input{
+    width: 190px;
+    height: 28px;
+    border-radius: 3px;
+    border: 1px solid #f10180;
+    background: #fff;
+    margin-left: 25px;
+    font-size: 14px;
+    color: #f10180;
+    margin-top: 20px;
+}
+#women-wear-commodity li input:hover{
+    background-color: #f10180;
+    color: #fff;
+    cursor: pointer;
+}
+//男装-------------------------------
+#stylish-guy-list p{
+    margin-top: 18px;
+    width: 236px;
+    background: #fff;
+    text-align: center;
+    font-size: 16px;
+    line-height: 40px;
+    border: 1px solid #000;
+}
+#stylish-guy-list p:hover{
+    background: #e1375b;
+    color: #fff;
+    border: 1px solid #e1375b;
+}
+
+#stylish-guy-commodity li{
+    width: 238px;
+    height: 397px;
+    background: #fff;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+#stylish-guy-commodity li img{
+    width: 236px;
+    height: 219px;
+}
+#stylish-guy-commodity li:hover{
+    border:1px solid #f10180;
+}
+//公共
+
+
+#stylish-guy-commodity li p{
+    font-size: 16px;
+    line-height: 26px;
+    height: 26px;
+    text-align: center;
+    margin-top: 20px;
+}
+#stylish-guy-commodity li h1{
+    text-align: center;
+    line-height: 33px;
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: 600;
+    color: #f10180;
+}
+#stylish-guy-commodity li input{
+    width: 190px;
+    height: 28px;
+    border-radius: 3px;
+    border: 1px solid #f10180;
+    background: #fff;
+    margin-left: 25px;
+    font-size: 14px;
+    color: #f10180;
+    margin-top: 20px;
+}
+#stylish-guy-commodity li input:hover{
+    background-color: #f10180;
+    color: #fff;
+    cursor: pointer;
+}
+//童装-------------------------------
+
+#children-wear-list p{
+    margin-top: 18px;
+    width: 236px;
+    background: #fff;
+    text-align: center;
+    font-size: 16px;
+    line-height: 40px;
+    border: 1px solid #000;
+}
+#children-wear-list p:hover{
+    background: #e1375b;
+    color: #fff;
+    border: 1px solid #e1375b;
+}
+#children-wear-commodity li{
+    width: 238px;
+    height: 397px;
+    background: #fff;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+#children-wear-commodity li img{
+    width: 236px;
+    height: 219px;
+}
+#children-wear-commodity li:hover{
+    border:1px solid #f10180;
+}
+//公共
+
+
+#children-wear-commodity li p{
+    font-size: 16px;
+    line-height: 26px;
+    height: 26px;
+    text-align: center;
+    margin-top: 20px;
+}
+#children-wear-commodity li h1{
+    text-align: center;
+    line-height: 33px;
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: 600;
+    color: #f10180;
+}
+#children-wear-commodity li input{
+    width: 190px;
+    height: 28px;
+    border-radius: 3px;
+    border: 1px solid #f10180;
+    background: #fff;
+    margin-left: 25px;
+    font-size: 14px;
+    color: #f10180;
+    margin-top: 20px;
+}
+#children-wear-commodity li input:hover{
+    background-color: #f10180;
+    color: #fff;
+    cursor: pointer;
+}
+
+//内衣---------------------------
+#underwear-list p{
+    margin-top: 18px;
+    width: 236px;
+    background: #fff;
+    text-align: center;
+    font-size: 16px;
+    line-height: 40px;
+    border: 1px solid #000;
+}
+#underwear-list p:hover{
+    background: #e1375b;
+    color: #fff;
+    border: 1px solid #e1375b;
+}
+#underwear-commodity li{
+    width: 238px;
+    height: 397px;
+    background: #fff;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+#underwear-commodity li img{
+    width: 236px;
+    height: 219px;
+}
+#rule{
+    width: 960px;
+    height: 1464px;
+    margin: 50px auto;
+    font-size: 16px;
+}
+#underwear-commodity li:hover{
+    border:1px solid #f10180;
+}
+//公共
+
+
+#underwear-commodity li p{
+    font-size: 16px;
+    line-height: 26px;
+    height: 26px;
+    text-align: center;
+    margin-top: 20px;
+}
+#underwear-commodity li h1{
+    text-align: center;
+    line-height: 33px;
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: 600;
+    color: #f10180;
+}
+#underwear-commodity li input{
+    width: 190px;
+    height: 28px;
+    border-radius: 3px;
+    border: 1px solid #f10180;
+    background: #fff;
+    margin-left: 25px;
+    font-size: 14px;
+    color: #f10180;
+    margin-top: 20px;
+}
+#underwear-commodity li input:hover{
+    background-color: #f10180;
+    color: #fff;
+    cursor: pointer;
+}
+// 楼梯--------------------------------
+#floorNav{
+    display: none;
+    position: fixed;
+    top: 300px;
+	right: 110px;
+	width: 120px;
+    // border: 1px solid #CECECE;
+    background: #510008;
+}
+#floorNav li{
+    position: relative;
+    width: 100px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    font-size: 12px;
+    color: #fff;
+    margin: 0 auto;
+    border-bottom: 1px solid #6b4110;
+}
+#floorNav li:hover{
+    color: #ff9e2b;
+}

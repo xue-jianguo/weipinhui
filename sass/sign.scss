@@ -1,0 +1,297 @@
+body,ul,dl,dt,dd,p,ol,h1,h2,h3,h4,h5,h6,form,img,table,fieldset,legend{margin:0; padding:0;}
+ul,li,ol{list-style:none;}
+img,fieldset{border:0; }
+img{display:block;}
+a{text-decoration:none; color:#333;}
+h1,h2,h3,h4,h5,h6{font-weight:100;}
+body{ font-family:"微软雅黑";}
+input,a{outline:none;}
+
+// ------------------------------------
+body,ul,dl,dt,dd,p,ol,h1,h2,h3,h4,h5,h6,form,img,table,fieldset,legend{margin:0; padding:0;}
+ul,li,ol{list-style:none;}
+img,fieldset{border:0; }
+img{display:block;}
+a{text-decoration:none; color:#333;}
+h1,h2,h3,h4,h5,h6{font-weight:100;}
+body{ font-family:"微软雅黑";}
+input,a{outline:none;}
+
+// ---------------------------------------
+// 头部---------------------
+.header{
+    width: 100%;
+    height: 100px;
+}
+.header-center a img:nth-of-type(1){
+    height: 100px;
+    width: 125px;
+}
+.header-center img:nth-of-type(1){
+    height: 100px;
+    width: 304px;
+}
+.header-center{
+    width: 1000px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+//登录-------------------------
+.main{
+    width: 100%;
+    height: 650px;
+    background: url(../img/remain.png) center;
+}
+.main-center{
+    width: 1000px;
+    height: 550px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+.main-sign{
+    width: 360px;
+    height: 440px;
+    background:#fff;
+    margin-left: 640px;
+}
+.mian-sign-top{
+    width: 360px;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #6666;
+}
+.mian-sign-top p{
+    width: 180px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #666;
+}
+.mian-sign-top p:hover{
+    color: #f10180;
+}
+.mian-sign-top p:nth-of-type(1){
+    box-sizing: border-box;
+    border-right: 1px solid #6666;
+}
+
+//账号注册-----------------------------------
+.mian-sign-center1{
+    width: 360px;
+    height: 390px;
+    display: none;
+}
+.sign-center-up1{
+    width: 360px;
+    height: 270px;
+    box-sizing: border-box;
+    padding: 0 30px 0 30px;
+    position: relative;
+    padding-top: 38px;
+}
+.up1-user,.up1-pasd{
+    width: 300px;
+    height: 46px;
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border: 1px solid #b2b2b2;
+}
+
+.sign-center-up1 i{
+    font-size: 20px;
+    position: absolute;
+    top: 13px;
+    left: 11px;
+}
+.sign-center-up1 input{
+    width: 208px;
+    height: 32px;
+    position: absolute;
+    left: 40px;
+    top: 5px;
+    border: none;
+}
+.sign-center-up1 input[type=button]{
+    position:static;
+    width: 300px;
+    height: 46px;
+    background-color: #f10180;
+    border: 1px solid #f10180;
+    color: #fff;
+    font-size: 18px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.sign-center-up1 span{
+    display: block;
+    height: 20px;
+}
+.sign-center-up1 a:nth-of-type(1){
+    float: left;
+    font-size: 14px;
+    margin-top: 5px;
+}
+.sign-center-up1 a:nth-of-type(2){
+    margin-left: 240px;
+    font-size: 12px;
+    position: absolute;
+    top: 180px;
+}
+
+.sign-center-down1{
+    height: 120px;
+    width: 360px;
+    box-sizing: border-box;
+    padding: 30px 30px 0 30px;
+    position: relative;
+}
+.down1-we{
+    width: 300px;
+    height: 40px;
+    position: relative;
+}
+.down1-img{
+    position: absolute;
+    left: 130px;
+}
+.down1-we:after {
+    position: absolute;
+    z-index: 1;
+    content: '';
+    top: 20px;
+    left: 0px;
+    width: 120px;
+    border-top: 1px solid #e0e0e0;
+}
+.down1-we:before {
+    position: absolute;
+    z-index: 1;
+    content: '';
+    top: 20px;
+    left: 180px;
+    width: 120px;
+    border-top: 1px solid #e0e0e0;
+}
+.down1-other{
+    width: 300px;
+    height: 24px;
+    margin-top:15px ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.down1-other span,p,b{
+    float: left;
+}
+.down1-other span,p{
+    font-size: 12px;
+    color: #999;
+}
+.down1-other b{
+    font-weight: 300;
+    font-size: 14px;
+}
+
+
+//扫码登录--------------------------------
+.mian-sign-center2{
+    display: block;
+    width: 300px;
+    height: 192px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+.sign-center-up2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.up2-img{
+    width: 160px;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(184, 182, 182);
+}
+.mian-sign-center2 p{
+    margin-top: 40px;
+    margin-left: 40px;
+}
+.sign-center-down2{
+    height: 120px;
+    width: 360px;
+    box-sizing: border-box;
+    // padding: 30px 30px 0 30px;
+    position: relative;
+    margin-top: 100px;
+}
+.down2-we{
+    width: 300px;
+    height: 40px;
+    position: relative;
+}
+.down2-img{
+    position: absolute;
+    left: 130px;
+}
+.down2-we:after {
+    position: absolute;
+    z-index: 1;
+    content: '';
+    top: 20px;
+    left: 0px;
+    width: 120px;
+    border-top: 1px solid #e0e0e0;
+}
+.down2-we:before {
+    position: absolute;
+    z-index: 1;
+    content: '';
+    top: 20px;
+    left: 180px;
+    width: 120px;
+    border-top: 1px solid #e0e0e0;
+}
+.down2-other{
+    width: 300px;
+    height: 24px;
+    margin-top:15px ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.down2-other span,p,b{
+    float: left;
+}
+.down2-other span,p{
+    font-size: 12px;
+    color: #999;
+}
+.down2-other b{
+    font-weight: 300;
+    font-size: 14px;
+}
+.down2-other p{
+    margin-top: -2px;
+    margin-left: -10px;
+}
+// 尾部---------------------------------
+.footer{
+    width: 1000px;
+    height: 78px;
+    margin: 0 auto;
+}
+.footer p{
+    text-align: center;
+    line-height: 78px;
+    color: #666666;
+    font-size: 12px;
+}

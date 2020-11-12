@@ -1,0 +1,93 @@
+{
+  "id": "2187783",
+  "name": "vips",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "508253",
+      "name": "密码",
+      "font_class": "mima",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    },
+    {
+      "icon_id": "4266192",
+      "name": "用户",
+      "font_class": "yonghu1",
+      "unicode": "e720",
+      "unicode_decimal": 59168
+    },
+    {
+      "icon_id": "6874059",
+      "name": "手机",
+      "font_class": "shouji",
+      "unicode": "e637",
+      "unicode_decimal": 58935
+    },
+    {
+      "icon_id": "14667693",
+      "name": "验证码",
+      "font_class": "mima1",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "300302",
+      "name": "心",
+      "font_class": "xin",
+      "unicode": "e613",
+      "unicode_decimal": 58899
+    },
+    {
+      "icon_id": "444222",
+      "name": "购物袋",
+      "font_class": "gouwudai",
+      "unicode": "e642",
+      "unicode_decimal": 58946
+    },
+    {
+      "icon_id": "584243",
+      "name": "上箭头",
+      "font_class": "iconfonticonfonti2copy",
+      "unicode": "e62d",
+      "unicode_decimal": 58925
+    },
+    {
+      "icon_id": "775396",
+      "name": "历史记录",
+      "font_class": "lishijilu",
+      "unicode": "e685",
+      "unicode_decimal": 59013
+    },
+    {
+      "icon_id": "967630",
+      "name": "搜索",
+      "font_class": "search",
+      "unicode": "e628",
+      "unicode_decimal": 58920
+    },
+    {
+      "icon_id": "2028395",
+      "name": "星星",
+      "font_class": "xingxing",
+      "unicode": "e621",
+      "unicode_decimal": 58913
+    },
+    {
+      "icon_id": "2077715",
+      "name": "用户",
+      "font_class": "yonghu",
+      "unicode": "e646",
+      "unicode_decimal": 58950
+    },
+    {
+      "icon_id": "12476913",
+      "name": "优惠券",
+      "font_class": "youhuiquan",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    }
+  ]
+}
